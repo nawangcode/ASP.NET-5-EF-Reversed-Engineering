@@ -1,0 +1,191 @@
+@model ASP5MVC6EF7ReversedWorkaround.Models.vwEvent
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>vwEvent</h4>
+        <hr />
+        <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="dLogged" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dLogged" class="form-control" />
+                <span asp-validation-for="dLogged" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dtLocal" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dtLocal" class="form-control" />
+                <span asp-validation-for="dtLocal" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dtLogged" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dtLogged" class="form-control" />
+                <span asp-validation-for="dtLogged" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dtLoggedUtc" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dtLoggedUtc" class="form-control" />
+                <span asp-validation-for="dtLoggedUtc" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="iEventId" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="iEventId" class="form-control" />
+                <span asp-validation-for="iEventId" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="idLevel" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="idLevel" class="form-control" />
+                <span asp-validation-for="idLevel" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="idMachine" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="idMachine" class="form-control" />
+                <span asp-validation-for="idMachine" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="idOrigin" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="idOrigin" class="form-control" />
+                <span asp-validation-for="idOrigin" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="idUserAcct" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="idUserAcct" class="form-control" />
+                <span asp-validation-for="idUserAcct" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sExtended" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sExtended" class="form-control" />
+                <span asp-validation-for="sExtended" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sIpAddr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sIpAddr" class="form-control" />
+                <span asp-validation-for="sIpAddr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sLevel" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sLevel" class="form-control" />
+                <span asp-validation-for="sLevel" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sMachine" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sMachine" class="form-control" />
+                <span asp-validation-for="sMachine" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sMessage" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sMessage" class="form-control" />
+                <span asp-validation-for="sMessage" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sMessageTag" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sMessageTag" class="form-control" />
+                <span asp-validation-for="sMessageTag" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sOrigin" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sOrigin" class="form-control" />
+                <span asp-validation-for="sOrigin" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sProcess" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sProcess" class="form-control" />
+                <span asp-validation-for="sProcess" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sSource" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sSource" class="form-control" />
+                <span asp-validation-for="sSource" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sThread" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sThread" class="form-control" />
+                <span asp-validation-for="sThread" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sUserAcct" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sUserAcct" class="form-control" />
+                <span asp-validation-for="sUserAcct" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="siPriority" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="siPriority" class="form-control" />
+                <span asp-validation-for="siPriority" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="siWinPID" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="siWinPID" class="form-control" />
+                <span asp-validation-for="siWinPID" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="siWinTID" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="siWinTID" class="form-control" />
+                <span asp-validation-for="siWinTID" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

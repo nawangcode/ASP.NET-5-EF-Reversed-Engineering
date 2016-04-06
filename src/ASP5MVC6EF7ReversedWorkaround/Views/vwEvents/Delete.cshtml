@@ -1,0 +1,160 @@
+@model ASP5MVC6EF7ReversedWorkaround.Models.vwEvent
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>vwEvent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dLogged)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dLogged)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dtLocal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dtLocal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dtLogged)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dtLogged)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dtLoggedUtc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dtLoggedUtc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.iEventId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.iEventId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.idLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.idLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.idMachine)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.idMachine)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.idOrigin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.idOrigin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.idUserAcct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.idUserAcct)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sExtended)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sExtended)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sIpAddr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sIpAddr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sMachine)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sMachine)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sMessage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sMessage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sMessageTag)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sMessageTag)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sOrigin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sOrigin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sProcess)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sProcess)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sSource)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sSource)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sThread)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sThread)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sUserAcct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sUserAcct)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.siPriority)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.siPriority)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.siWinPID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.siWinPID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.siWinTID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.siWinTID)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,164 @@
+@model IEnumerable<ASP5MVC6EF7ReversedWorkaround.Models.vwEvent>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.dLogged)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dtLocal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dtLogged)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dtLoggedUtc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iEventId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idMachine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idOrigin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idUserAcct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sExtended)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sIpAddr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sMachine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sMessage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sMessageTag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sOrigin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sProcess)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sSource)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sThread)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sUserAcct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.siPriority)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.siWinPID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.siWinTID)
+        </th>
+        <th></th>
+    </tr>
+    
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.dLogged)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dtLocal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dtLogged)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dtLoggedUtc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iEventId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idMachine)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idOrigin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idUserAcct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sExtended)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sIpAddr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sMachine)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sMessage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sMessageTag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sOrigin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sProcess)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sSource)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sThread)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sUserAcct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.siPriority)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.siWinPID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.siWinTID)
+        </td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.idEvent">Edit</a> |
+            <a asp-action="Details" asp-route-id="@item.idEvent">Details</a> |
+            <a asp-action="Delete" asp-route-id="@item.idEvent">Delete</a>
+        </td>
+    </tr>
+}
+</table>
